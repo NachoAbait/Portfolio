@@ -1,9 +1,11 @@
 import React from "react";
 import css from "./index.module.css";
+import { Link } from "react-scroll";
 
 //COMPONENTES
 import Nacho from "../Nacho/Nacho";
 import SobreMi from "../Sobre mi/SobreMi";
+import Proyectos from "../Proyectos/Proyectos";
 
 export default function Index() {
   return (
@@ -20,31 +22,85 @@ export default function Index() {
         <div className={css.menu}>
           <ul className={css.lista}>
             <li>
-              <h2>Nacho</h2>
-            </li>
-
-            <li>
-              <h3>Sobre mi</h3>
-            </li>
-            <li>
-              <h3>Proyectos</h3>
-            </li>
-            <li>
-              <h3>Educaciòn</h3>
-            </li>
-            <li>
-              <h3>Skills</h3>
+              <Link
+                activeClass="active"
+                to="nacho"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h2>Nacho</h2>
+              </Link>
             </li>
             <li>
-              <h3>Contacto</h3>
+              <Link
+                activeClass="active"
+                to="sobre-mi"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h3>Sobre mi</h3>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="proyectos"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h3>Proyectos</h3>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="sobre-mi"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h3>Educacion</h3>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="sobre-mi"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h3>Skills</h3>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="sobre-mi"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <h3>Contacto</h3>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
 
       <div className={css.principal}>
-        <Nacho></Nacho>
-        <SobreMi></SobreMi>
+        <Nacho />
+        <SobreMi />
+        <Proyectos />
       </div>
     </div>
   );

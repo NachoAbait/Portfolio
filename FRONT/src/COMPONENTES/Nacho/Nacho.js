@@ -3,7 +3,7 @@ import css from "./Nacho.module.css";
 
 export default function Nacho() {
   return (
-    <div className={css.nacho}>
+    <div className={css.nacho} id="nacho" >
       <div className={css.container}>
         <span className={css.nombre}>NACHO</span>
         <span className={css.apellido}>ABAIT</span>

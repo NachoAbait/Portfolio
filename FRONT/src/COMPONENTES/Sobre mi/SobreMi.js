@@ -3,7 +3,7 @@ import css from "./SobreMi.module.css";
 
 export default function SobreMi() {
   return (
-    <div className={css.sobreMi}>
+    <div className={css.sobreMi} id="sobre-mi">
       <div className={css.container}>
         <h1 className={css.titulo}>SOBRE MI</h1>
         <h2 className={css.texto}>
@@ -22,12 +22,12 @@ export default function SobreMi() {
         <h2>🔭Actualmente estoy en busca de trabajo. </h2>
         <h2>🌱 Siempre dispuesto a nuevos desafios para seguir aprendiendo</h2>
         <h2>
-          ❓ Puedes contactarme por LinkedIn o vía mail nachoabait@hotmail.com
+          ❓ Puedes contactarme por <a href="https://www.linkedin.com/in/nacho-abait-480073256/" target="_blank">LinkedIn</a>  o vía mail a nachoabait@hotmail.com
         </h2>
 
         <br></br>
-              <br></br>
-              <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <h2 className={css.linea}>
           _________________________________________________________________________________________________________________________________________________
