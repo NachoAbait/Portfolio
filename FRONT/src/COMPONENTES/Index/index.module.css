@@ -8,7 +8,7 @@
     background-color: #568EA3;
     width: 20%;
     height: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 .principal{
@@ -17,6 +17,7 @@
     height: 100%;
     position: absolute;
     right: 0%;
+    display: block;
 }
 
 .menu{

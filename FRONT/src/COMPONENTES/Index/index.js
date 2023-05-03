@@ -1,6 +1,9 @@
 import React from "react";
 import css from "./index.module.css";
+
+//COMPONENTES
 import Nacho from "../Nacho/Nacho";
+import SobreMi from "../Sobre mi/SobreMi";
 
 export default function Index() {
   return (
@@ -41,6 +44,7 @@ export default function Index() {
 
       <div className={css.principal}>
         <Nacho></Nacho>
+        <SobreMi></SobreMi>
       </div>
     </div>
   );
