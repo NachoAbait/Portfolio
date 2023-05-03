@@ -1,0 +1,93 @@
+.nacho{
+    position: absolute;
+    /*
+    background-image: url("https://us.123rf.com/450wm/welcomia/welcomia1204/welcomia120400389/13241850-fondo-negro-patr%C3%B3n-de-gris-oscuro-fondos-de-la-colecci%C3%B3n.jpg");
+    */
+    background-color: #011627;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    text-align: left;
+    margin-left: 3%;
+    padding-bottom: 3%
+}
+
+.nombre{
+    color: white;
+    font-weight: bold;
+    font-size: 110px;
+    margin-right: 5px;
+}
+
+.apellido{
+    color: #E71D36;
+    font-weight: bold;
+    font-size: 110px;
+}
+
+.bienvenidos {
+    color: #FCE762;
+    font-size: 40px;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 54ch;
+    overflow: hidden;
+    animation: typing 3s steps(108), blink 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 54ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+.contacto{
+    color: white;
+    font-size: 25px
+}
+
+.boton{
+    background-color: #E71D36;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    margin-left: 2%;
+    width: 14%;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.boton:focus {
+    box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
+
+.boton:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-4px);
+    background-color: #E71D36;
+    color: white;
+    border-radius: 50px;
+    
+  }
+
+  .boton:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+    transform: translateY(0.125rem);
+  }
+
+  .linea{
+    color: white;
+  }

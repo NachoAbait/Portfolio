@@ -5,7 +5,7 @@
 }
 
 .barraLateral{
-    background-color: rgb(179, 75, 23);
+    background-color: #568EA3;
     width: 20%;
     height: 100%;
     position: absolute;
@@ -26,9 +26,15 @@
 }
 
 .lista{
+    color: white;
+    font-size: x-large;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
+}
+
+ul li{
+    cursor: pointer;
 }
 
 .foto{

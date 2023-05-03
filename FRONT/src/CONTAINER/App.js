@@ -1,6 +1,6 @@
 
 import './App.css';
-import Index from './FRONT/COMPONENTES/Index/index';
+import Index from '../COMPONENTES/Index/index';
 
 function App() {
   return (
