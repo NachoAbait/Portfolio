@@ -6,6 +6,9 @@ import { Link } from "react-scroll";
 import Nacho from "../Nacho/Nacho";
 import SobreMi from "../Sobre mi/SobreMi";
 import Proyectos from "../Proyectos/Proyectos";
+import Educacion from "../Educacion/Educacion";
+import Skills from "../Skills/Skills";
+import Contacto from "../Contacto/Contacto";
 
 export default function Index() {
   return (
@@ -60,7 +63,7 @@ export default function Index() {
             <li>
               <Link
                 activeClass="active"
-                to="sobre-mi"
+                to="educacion"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -72,7 +75,7 @@ export default function Index() {
             <li>
               <Link
                 activeClass="active"
-                to="sobre-mi"
+                to="skills"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -84,7 +87,7 @@ export default function Index() {
             <li>
               <Link
                 activeClass="active"
-                to="sobre-mi"
+                to="contacto"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -101,6 +104,9 @@ export default function Index() {
         <Nacho />
         <SobreMi />
         <Proyectos />
+        <Educacion />
+        <Skills />
+        <Contacto />
       </div>
     </div>
   );
