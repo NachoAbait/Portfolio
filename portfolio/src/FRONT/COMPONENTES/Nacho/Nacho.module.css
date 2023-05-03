@@ -1,0 +1,48 @@
+.nacho{
+    position: absolute;
+    background-color: rgb(12, 174, 20);
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    top: 30%;
+    text-align: left;
+    margin-left: 3%;
+    padding-bottom: 3%
+}
+
+.nombre{
+    font-size: 80px
+}
+
+.bienvenidos{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 54ch;
+
+    animation: typing 2s steps(54),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink {
+50% {border-color: transparent}
+}
+
+.boton{
+    background-color: red;
+    color: black;
+    margin-left: 5%;
+}
+
+
