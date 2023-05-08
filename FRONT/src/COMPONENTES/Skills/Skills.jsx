@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef} from "react";
 import css from "./Skills.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {faNode, faHtml5, faCss3Alt, faSquareJs, faReact, faGithub , } from "@fortawesome/free-brands-svg-icons"
+import { faNode, faHtml5, faCss3Alt, faSquareJs, faReact, faGithub, } from "@fortawesome/free-brands-svg-icons"
+
+
 
 export default function Skills() {
+    const skillsRef = useRef(null);
+
+    useEffect(() => {
+      const altura = window.innerHeight / 1.3;
+  
+      function handleScroll() {
+        const distancia = skillsRef.current.getBoundingClientRect().top;
+  
+        if (distancia <= altura) {
+          skillsRef.current.classList.add(css.aparece);
+        } else {
+          skillsRef.current.classList.remove(css.aparece);
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+    
+   
 
     return (
-        <section className={css.Skills} id="skills">
-            <div className={css.titulo}>
+            
+             <section className={css.Skills} id="skills">
+            <div className={css.titulo} ref={skillsRef}>
                 <h4>Skills & Habilidades -------</h4>
                 <h1>CONOCIMIENTOS</h1>
             </div>
@@ -128,5 +154,9 @@ export default function Skills() {
             </div>
            
        </section>
+        
+           
+    
+        
     )
 }

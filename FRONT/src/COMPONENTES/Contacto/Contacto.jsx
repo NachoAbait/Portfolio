@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef} from "react";
 import css from "./Contacto.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faNode, faHtml5, faCss3Alt, faSquareJs, faReact, faGithub, faWhatsapp, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, } from "@fortawesome/free-solid-svg-icons"
 
 export default function Contacto() {
+const contactoRef = useRef(null);
+
+  useEffect(() => {
+    const altura = window.innerHeight / 1.3;
+
+    function handleScroll() {
+      const distancia = contactoRef.current.getBoundingClientRect().top;
+
+      if (distancia <= altura) {
+        contactoRef.current.classList.add(css.aparece);
+      } else {
+        contactoRef.current.classList.remove(css.aparece);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
     return (
         <section className={css.Contacto} id="contacto">
 
-            <div className={css.titulo}>
+            <div className={css.titulo} id="hola" ref={contactoRef}>
                 <h4> ----- Contacto -----</h4>
                 <h1>CONTACTAME</h1>
             </div>

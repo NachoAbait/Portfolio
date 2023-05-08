@@ -15,6 +15,7 @@
     font-size: xx-large;
     padding-left: 40px;
     margin-bottom: 0;
+    opacity: 0;
 }
 
 .titulo :global(*){
@@ -142,4 +143,10 @@ a {
     position: absolute;
     width: 100%;
     
+  }
+
+  .aparece{
+    opacity: 1;
+    transition: 2s;
+    transform: translateX(50px);
   }

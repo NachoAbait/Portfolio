@@ -6,7 +6,8 @@ import Proyectos from "../Proyectos/Proyectos"
 import Contacto from "../Contacto/Contacto";
 import { Link } from "react-scroll";
 
-export default function Principal(){
+export default function Principal() {
+   
     return (
         <div className={css.principal}>
                 <div className={css.header}>
@@ -73,7 +74,8 @@ export default function Principal(){
                 </div>
             
             <Inicio></Inicio>
-            <Skills></Skills>
+            <Skills ></Skills>
+            <Proyectos></Proyectos>
             <Contacto></Contacto>
 
         </div>
