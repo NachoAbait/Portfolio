@@ -1,20 +1,46 @@
 .Proyectos{
     position: relative;
-    background-color: #011627;
-    height: 100%;
     width: 100%;
-}
+    display: flex-box;
 
-.container{
-    position: absolute;
-    width: 90%;
-    top: 10%;
-    text-align: left;
-    margin-left: 3%;
-    padding-bottom: 3%
 }
 
 .titulo{
-    color: #E71D36;
-    font-size: 70px;
+    position: relative;
+    width: 100%;
+    padding-top: 190px;
+    display: relative;
+    height: 120px;
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.titulo :global(*){
+    margin: 0;
+}
+
+.titulo h4{
+    color: grey;
+}
+
+.container{
+
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+}
+
+
+.proyectos{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    margin-right: 20px;
+    margin: 0;
 }

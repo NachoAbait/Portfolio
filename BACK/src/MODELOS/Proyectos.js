@@ -18,9 +18,9 @@ const proyectosSchema = new Schema({
     require: true,
     type: Array,
   },
-  link: {
+  enlaces: {
     require: true,
-    type: String,
+    type: Array,
   },
 });
 

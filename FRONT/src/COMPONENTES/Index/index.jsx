@@ -1,7 +1,8 @@
-import React from "react";
+
 import css from "./index.module.css";
 import { Link } from "react-scroll";
-
+import React, { useEffect, useState } from "react"
+import { useDispatch, useSelector } from "react-redux"
 //COMPONENTES
 import Nacho from "../Nacho/Nacho";
 import SobreMi from "../Sobre mi/SobreMi";
@@ -9,8 +10,13 @@ import Proyectos from "../Proyectos/Proyectos";
 import Educacion from "../Educacion/Educacion";
 import Skills from "../Skills/Skills";
 import Contacto from "../Contacto/Contacto";
+//ACTIONS
+import getProyecto from "../../ACTIONS/getProyecto"
+
 
 export default function Index() {
+
+
   return (
     <div className={css.container}>
       <div className={css.barraLateral}>

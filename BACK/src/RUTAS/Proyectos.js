@@ -11,16 +11,15 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 router.post("/", async (req, res) => {
   try {
-    const { nombre, img, resumen, tecnologias, link } = req.body;
+    const { nombre, img, resumen, tecnologias, enlaces } = req.body;
     const proyecto = new ProyectosModel({
       nombre,
       img,
       resumen,
       tecnologias,
-      link,
+      enlaces,
     });
     const proyectoSaved = await proyecto.save();
     console.log(proyectoSaved);

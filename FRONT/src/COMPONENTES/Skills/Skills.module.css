@@ -1,20 +1,119 @@
 .Skills{
     position: relative;
-    background-color: #011627;
-    height: 100%;
     width: 100%;
-}
+    top: 83px;
+    display: flex-box;
 
-.container{
-    position: absolute;
-    width: 90%;
-    top: 10%;
-    text-align: left;
-    margin-left: 3%;
-    padding-bottom: 3%
 }
 
 .titulo{
-    color: #E71D36;
-    font-size: 70px;
+    position: relative;
+    width: 100%;
+    top: 90px;
+    display: relative;
+    height: 120px;
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.titulo :global(*){
+    margin: 0;
+}
+
+.titulo h4{
+    color: grey;
+}
+
+.grid{
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+}
+
+.item{
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    border: solid 5px grey;
+    height: 100px;
+    display: flex;
+    background-color: beige;
+}
+
+
+
+.icono{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.font{
+    position: flex;
+    height: 100%;
+}
+
+.tecnologia{
+    position: relative;
+    font-size: x-large;
+    width: 70%;
+    height: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.seq{
+    color: aqua;
+}
+
+.express{
+    padding-top: 20px;
+}
+
+.extras{
+    background-color: aqua;
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+
+}
+
+
+
+.item:hover .tecnologia{
+    pointer-events: none;
+}
+
+.item:hover .icono{
+    pointer-events: none;
+}
+
+.item{
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    border: solid 5px grey;
+    height: 100px;
+    display: flex;
+    background-color: beige;;
+}
+
+.item:hover{
+    background-color: rgba(93, 91, 91, 0.247);
+    border: solid
 }
