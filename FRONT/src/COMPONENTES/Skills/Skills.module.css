@@ -36,6 +36,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 10px;
+        opacity: 0;
+        z-index: 999;
+        
 }
 
 .item{
@@ -119,8 +122,133 @@ a {
     border: solid
 }
 
+
 .aparece{
     opacity: 1;
-    transition: 2s;
+    transition: 3s;
     transform: translateX(50px);
-  }
+}
+
+.apareceGrid{
+    opacity: 1;
+    transition: 3s;
+    transform: translateY(-50px);
+}
+
+.animation1{
+position: absolute;
+width: 50%;
+height: 900px;
+top: 100px;
+right: 0;
+display: flex;
+}
+
+.animacion1{
+    border: 0ch;
+    width: 100%;
+    height: 100%;
+}
+
+.extra1{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.extra1Animation{
+    position: relative;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.extra1Animacion{
+    border: 0ch;
+  width: 100%;
+  height: 100%;
+}
+
+.extra1Texto{
+    display: flex-box;
+    width: 60%;
+    text-align: left;
+    align-items: center;
+    padding-top: 130px;
+    opacity: 0;
+}
+
+.extra2{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.extra2Animation{
+    position: relative;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    top: -90px;
+}
+
+.extra2Animacion{
+    border: 0ch;
+  width: 100%;
+  height: 100%;
+}
+
+.extra2Texto{
+    display: flex-box;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    text-align: left;
+    padding-top: 80px;
+    margin: 0;
+    opacity: 0;
+    
+}
+
+.extra2Texto h1{
+    font-size: 60px;
+    color: rgb(255, 106, 0);
+    margin: 0;
+}
+.extra2Texto h4{
+    margin-top: 0;
+    color: black;
+    font-size: xx-large;
+}
+
+.extra1Texto h1{
+    font-size: 60px;
+    color: rgb(100, 13, 205);
+    margin: 0;
+}
+.extra1Texto h4{
+    margin-top: 0;
+    color: black;
+    font-size: xx-large;
+}
+
+.apareceTexto1{
+    opacity: 1;
+    transition: 4s;
+    transform: translateX(50px);
+}
+
+.apareceTexto2{
+    opacity: 1;
+    transition: 4s;
+    transform: translateX(-50px);
+}

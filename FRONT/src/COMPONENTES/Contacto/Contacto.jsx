@@ -27,6 +27,31 @@ const contactoRef = useRef(null);
     };
   }, []);
 
+    //-------------------------------
+     
+   const gridRef = useRef(null);
+
+   useEffect(() => {
+     const altura = window.innerHeight / 1.3;
+ 
+     function handleScroll() {
+       const distancia = gridRef.current.getBoundingClientRect().top;
+ 
+       if (distancia <= altura) {
+         gridRef.current.classList.add(css.apareceGrid);
+       } else {
+         gridRef.current.classList.remove(css.apareceGrid);
+       }
+     }
+ 
+     window.addEventListener("scroll", handleScroll);
+ 
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
+   
+
     return (
         <section className={css.Contacto} id="contacto">
 
@@ -34,7 +59,7 @@ const contactoRef = useRef(null);
                 <h4> ----- Contacto -----</h4>
                 <h1>CONTACTAME</h1>
             </div>
-            <div className={css.grid}>
+            <div className={css.grid} ref={gridRef}>
             <a target="_blank" href="https://www.linkedin.com/in/nacho-abait-480073256/">
                 <div className={css.item}>
                     <div className={css.icono}>
@@ -80,10 +105,10 @@ const contactoRef = useRef(null);
                         </div>
                     </div>
                 </a>
-                
-
-
-            </div>
+        </div>
+        <div className={css.animation}>
+        <iframe  className={css.animacion} src="https://embed.lottiefiles.com/animation/89966"></iframe>
+        </div>
             <div className={css.olas}>
                         <svg className={css.waves} preserveAspectRatio='none' shapeRendering='auto' viewBox='0 24 150 28' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>
                             <defs>

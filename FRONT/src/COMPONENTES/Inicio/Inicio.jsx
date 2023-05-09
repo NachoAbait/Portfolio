@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useEffect, useRef} from "react";
 import css from "../Inicio/Inicio.module.css"
 
 
-export default function Inicio(){
+export default function Inicio() {
+      
+   const aprendiendoRef = useRef(null);
+
+   useEffect(() => {
+     const altura = window.innerHeight / 1.3;
+ 
+     function handleScroll() {
+       const distancia = aprendiendoRef.current.getBoundingClientRect().top;
+ 
+       if (distancia <= altura) {
+        aprendiendoRef.current.classList.add(css.aparece);
+       } else {
+        aprendiendoRef.current.classList.remove(css.aparece);
+       }
+     }
+ 
+     window.addEventListener("scroll", handleScroll);
+ 
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
+   
     return (
         <section className={css.inicio} id="inicio">
             <div className={css.presentacion}>
@@ -16,8 +39,8 @@ export default function Inicio(){
                     <div className={css.h1}>
                         <h1 >Full Stack Developer </h1>
                     </div>
-                    <div className={css.h4}>
-                        <h4 className={css.aprendiendo}>Aprendiendo  dia a dia para cambiar la vida de miles de usuarios de todo el mundo</h4>
+                    <div className={css.h4} ref={aprendiendoRef}>
+                        <h4 className={css.aprendiendo} >Aprendiendo  dia a dia para cambiar la vida de miles de usuarios de todo el mundo</h4>
                     </div>
                     
                 

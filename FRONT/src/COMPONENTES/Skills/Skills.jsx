@@ -28,8 +28,80 @@ export default function Skills() {
       };
     }, []);
     
-   
+   //----------------------------------------------------------------
+    
+   const gridRef = useRef(null);
 
+   useEffect(() => {
+     const altura = window.innerHeight / 1.3;
+ 
+     function handleScroll() {
+       const distancia = gridRef.current.getBoundingClientRect().top;
+ 
+       if (distancia <= altura) {
+         gridRef.current.classList.add(css.apareceGrid);
+       } else {
+         gridRef.current.classList.remove(css.apareceGrid);
+       }
+     }
+ 
+     window.addEventListener("scroll", handleScroll);
+ 
+     return () => {
+       window.removeEventListener("scroll", handleScroll);
+     };
+   }, []);
+   
+    //---------------------------------------------------------------
+
+    const texto1Ref = useRef(null);
+
+    useEffect(() => {
+      const altura = window.innerHeight / 1.3;
+  
+      function handleScroll() {
+        const distancia = texto1Ref.current.getBoundingClientRect().top;
+  
+        if (distancia <= altura) {
+            texto1Ref.current.classList.add(css.apareceTexto1);
+        } else {
+            texto1Ref.current.classList.remove(css.apareceTexto1);
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+    
+
+    //----------------------------------------------------------------
+
+    const texto2Ref = useRef(null);
+
+    useEffect(() => {
+      const altura = window.innerHeight / 1.3;
+  
+      function handleScroll() {
+        const distancia = texto2Ref.current.getBoundingClientRect().top;
+  
+        if (distancia <= altura) {
+            texto2Ref.current.classList.add(css.apareceTexto2);
+        } else {
+            texto2Ref.current.classList.remove(css.apareceTexto2);
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
+    //---------------------------------------------------------------
     return (
             
              <section className={css.Skills} id="skills">
@@ -37,7 +109,7 @@ export default function Skills() {
                 <h4>Skills & Habilidades -------</h4>
                 <h1>CONOCIMIENTOS</h1>
             </div>
-            <div className={css.grid}>
+            <div className={css.grid} ref={gridRef}>
                 
                     <div className={css.item}>
                         <div className={css.icono}>
@@ -149,10 +221,46 @@ export default function Skills() {
                 </div>
                 
             </div>
-            <div className={css.extras}>
+            <div className={css.animation1}>
+            <iframe  className={css.animacion1} src="https://embed.lottiefiles.com/animation/96143"></iframe>
+            </div>
+
+            <div className={css.extra1}>
+                <div className={css.extra1Animation}>
+                    <div className={css.extra1Animacion}>
+                        <iframe className={css.extra1Animacion} src="https://embed.lottiefiles.com/animation/63921"></iframe>
+                    </div>
+                </div>
+                <div className={css.extra1Texto} ref={texto1Ref}>
+                <div className={css.h1}>
+                        <h1>Desarrollo Front-End</h1>
+                    </div>
+                    <div className={css.h2}>
+                        <h4>
+                        Como Full Stack Developer, tengo la capacidad de trabajar en tareas tanto de back-end como de front-end. En cuanto al back-end, puedo manejar bases de datos, crear y configurar servidores y desarrollar API RESTful. En cuanto al front-end, tengo habilidades en HTML, CSS y JavaScript, así como en el uso de frameworks como React y Angular. <br></br>Además, mi experiencia en trabajar en equipo me permite colaborar eficazmente con otros desarrolladores y diseñadores para producir soluciones de alta calidad.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div className={css.extra2}>
+
+                <div className={css.extra2Texto} ref={texto2Ref}>
+                    <div className={css.h1}>
+                        <h1>Trabajo en equipo</h1>
+                    </div>
+                    <div className={css.h2}>
+                        <h4>Me considero una persona colaborativa y comprometida con el trabajo en equipo. Mi capacidad para comunicarme efectivamente y escuchar activamente me permite entender las perspectivas de mis compañeros y trabajar juntos para lograr objetivos comunes. <br></br>Además, mi habilidad para adaptarme a diferentes estilos de trabajo y mantener un ambiente armonioso y productivo contribuye a un equipo más efectivo y exitoso.</h4>
+                    </div>
+                </div>
+                <div className={css.extra2Animation}>
+                    <div className={css.extra2Animacion}>
+                        <iframe className={css.extra2Animacion} src="https://embed.lottiefiles.com/animation/89965"></iframe>
+                    </div>
+                </div>
+
                 
             </div>
-           
        </section>
         
            

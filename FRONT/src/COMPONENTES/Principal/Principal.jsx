@@ -72,10 +72,8 @@ export default function Principal() {
                         </ul>
                     </div>
                 </div>
-            
             <Inicio></Inicio>
             <Skills ></Skills>
-            <Proyectos></Proyectos>
             <Contacto></Contacto>
 
         </div>
