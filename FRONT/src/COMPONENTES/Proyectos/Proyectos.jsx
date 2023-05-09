@@ -37,6 +37,29 @@ export default function Proyectos() {
     }, []);
 
     //-------------------------------------------------------------------------------------
+    const proyRef = useRef(null);
+
+    useEffect(() => {
+      const altura = window.innerHeight / 1.3;
+  
+      function handleScroll() {
+        const distancia = proyRef.current.getBoundingClientRect().top;
+  
+        if (distancia <= altura) {
+          proyRef.current.classList.add(css.apareceProy);
+        } else {
+          proyRef.current.classList.remove(css.apareceProy);
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
+    //-------------------------------------------------------------------------------------
 
 
     return (
@@ -46,7 +69,7 @@ export default function Proyectos() {
                 <h1>EXPERIENCIA</h1>
             </div>
         
-            <div className={css.container}>
+            <div className={css.container} ref={proyRef}>
           
               <div className={css.Tarjeta}>
                 <div className={`${css.cara} ${css.front}`}>
@@ -108,7 +131,10 @@ export default function Proyectos() {
                       Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
                     </p>
                   </div>
-                  <div className={css.containerGit}>
+              <div className={css.containerGit}>
+              <a target="blank" href="">
+                      <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
+                    </a> 
                     <a target="blank" href="https://www.adoptme.com.ar/">
                       <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
                     </a>     
@@ -142,7 +168,10 @@ export default function Proyectos() {
                       Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
                     </p>
                   </div>
-                  <div className={css.containerGit}>
+              <div className={css.containerGit}>
+              <a target="blank" href="">
+                      <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
+                    </a> 
                     <a target="blank" href="https://www.adoptme.com.ar/">
                       <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
                     </a>     
@@ -176,7 +205,10 @@ export default function Proyectos() {
                       Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
                     </p>
                   </div>
-                  <div className={css.containerGit}>
+              <div className={css.containerGit}>
+                  <a target="blank" href="">
+                      <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
+                    </a>  
                     <a target="blank" href="https://www.adoptme.com.ar/">
                       <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
                     </a>     

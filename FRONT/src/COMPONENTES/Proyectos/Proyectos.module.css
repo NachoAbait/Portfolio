@@ -27,7 +27,7 @@
 }
 
 .container{
-
+    opacity: 0;
     position: relative;
     width: 70%;
     margin: 0 auto;
@@ -202,19 +202,16 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .Tarjeta:hover .front {
     transform: perspective(600px) rotateY(160deg);
 }
 
 .Tarjeta:hover .back {
     transform: perspective(600px) rotateY(360deg);
+}
+
+.apareceProy{
+    opacity: 1;
+    transition: 4s;
+    transform: translateY(-50px);
 }
