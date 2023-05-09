@@ -237,7 +237,7 @@ export default function Skills() {
                     </div>
                     <div className={css.h2}>
                         <h4>
-                        Como Full Stack Developer, tengo la capacidad de trabajar en tareas tanto de back-end como de front-end. En cuanto al back-end, puedo manejar bases de datos, crear y configurar servidores y desarrollar API RESTful. En cuanto al front-end, tengo habilidades en HTML, CSS y JavaScript, así como en el uso de frameworks como React y Angular. <br></br>Además, mi experiencia en trabajar en equipo me permite colaborar eficazmente con otros desarrolladores y diseñadores para producir soluciones de alta calidad.
+                        Como Full Stack Developer, tengo la capacidad de trabajar en tareas tanto de back-end como de front-end. En cuanto al back-end, puedo manejar bases de datos, crear y configurar servidores y desarrollar API RESTful. En cuanto al front-end, tengo habilidades en HTML, CSS y JavaScript, así como en el uso de frameworks como React. <br></br>Además, mi experiencia en trabajar en equipo me permite colaborar eficazmente con otros desarrolladores y diseñadores para producir soluciones de alta calidad.
                         </h4>
                     </div>
                 </div>

@@ -74,6 +74,7 @@ export default function Principal() {
                 </div>
             <Inicio></Inicio>
             <Skills ></Skills>
+            <Proyectos></Proyectos>
             <Contacto></Contacto>
 
         </div>
