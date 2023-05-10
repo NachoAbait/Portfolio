@@ -25,6 +25,10 @@ height: 70%;
     overflow: hidden;
 }
 
+.fotito{
+  width: 105%;
+}
+
 .h1{
     position: absolute;
     display: flex;
@@ -38,13 +42,12 @@ height: 70%;
 }
 
 .h4{
-background-color: black;
 position: absolute;
 top: 300px;
-width: 80%;
-right: 10%;
+width: 120%;
+right:-60px;
 text-align: left;
-font-size: xx-large;
+font-size: x-large;
 color: white;
 display: flex;
 opacity: 0;

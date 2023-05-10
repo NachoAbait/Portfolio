@@ -1,5 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import css from "../Inicio/Inicio.module.css"
+import foto from "../../IMG/FotoCV3.jpg"
 
 
 export default function Inicio() {
@@ -31,7 +32,7 @@ export default function Inicio() {
             <div className={css.presentacion}>
                     <div className={css.img}>
                     <img
-                    src="https://i.pinimg.com/236x/e9/57/2a/e9572a70726980ed5445c02e1058760b.jpg"
+                        src={ foto}
                     alt="foto"
                     className={css.fotito}
           ></img>
@@ -40,7 +41,7 @@ export default function Inicio() {
                         <h1 >Full Stack Developer </h1>
                     </div>
                     <div className={css.h4} ref={aprendiendoRef}>
-                        <h4 className={css.aprendiendo} >Aprendiendo  dia a dia para cambiar la vida de miles de usuarios de todo el mundo</h4>
+                        <h4 className={css.aprendiendo} >Como desarrollador, mi pasión es crear soluciones tecnológicas que mejoren la vida de las personas y transformen el mundo digital. Estoy comprometido con la excelencia y siempre busco ofrecer soluciones innovadoras y efectivas a mis clientes. <br></br> ¡Bienvenidos a mi portafolio!</h4>
                     </div>
                     
                 
@@ -72,7 +73,10 @@ export default function Inicio() {
                         </svg>
                     </div>
             <div className={css.btn}>
-            <button className={css.boton}>Descargar CV</button>
+                <a target="blank" href="https://drive.google.com/file/d/1YGz8ahNfhIM-11j8M-LWcr2SRh1hMMqr/view?usp=sharing">
+                    <button className={css.boton}>Descargar CV</button>
+                </a>
+            
             </div>
         </section>
         

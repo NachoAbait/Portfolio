@@ -199,19 +199,16 @@ export default function Proyectos() {
                 </div>    
 
                 <div className={`${css.cara} ${css.back}`}>
-                  <div className={css.containerResumen}>  
-                    <p className={css.resumen}>
-                      Nuestro equipo se ha dedicado a desarrollar una aplicación que simplifica la adopción y el cuidado de mascotas. Gracias a la geolocalización, la aplicación ayuda a los usuarios a encontrar mascotas que necesitan un hogar en su área de residencia. <br></br>Además, hemos expandido nuestros servicios para incluir contratación de paseadores, un ecommerce y un apartado para ayudar a personas que han perdido a sus mascotas.
-                      Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
+                  <div className={css.containerResumenPorfolio}>  
+                <p className={css.resumen}>
+                    Este portfolio es una muestra de mi experiencia y habilidades como desarrollador, donde podrás encontrar una selección de mis mejores proyectos, así como una lista de mis habilidades técnicas. <br></br> Me apasiona crear soluciones tecnológicas innovadoras y efectivas que satisfagan las necesidades de mis clientes, y estoy comprometido en ofrecer un servicio excepcional en cada proyecto.
                     </p>
                   </div>
               <div className={css.containerGit}>
-                  <a target="blank" href="">
+                  <a target="blank" href="https://github.com/NachoAbait/Portfolio">
                       <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
                     </a>  
-                    <a target="blank" href="https://www.adoptme.com.ar/">
-                      <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
-                    </a>     
+                       
                   </div>
                 </div>   
           </div>
