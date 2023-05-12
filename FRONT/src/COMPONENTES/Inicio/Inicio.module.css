@@ -182,7 +182,7 @@ display: flex;
 
 .aparece{
   opacity: 1;
-  transition: 2.5s;
+  transition: 3s;
   transform: translateY(20px);
 }
 

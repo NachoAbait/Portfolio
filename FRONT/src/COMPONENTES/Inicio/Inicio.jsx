@@ -5,27 +5,11 @@ import foto from "../../IMG/FotoCV3.jpg"
 
 export default function Inicio() {
       
-   const aprendiendoRef = useRef(null);
+    const aprendiendoRef = useRef(null);
 
-   useEffect(() => {
-     const altura = window.innerHeight / 1.3;
- 
-     function handleScroll() {
-       const distancia = aprendiendoRef.current.getBoundingClientRect().top;
- 
-       if (distancia <= altura) {
-        aprendiendoRef.current.classList.add(css.aparece);
-       } else {
-        aprendiendoRef.current.classList.remove(css.aparece);
-       }
-     }
- 
-     window.addEventListener("scroll", handleScroll);
- 
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
-   }, []);
+    useEffect(() => {
+       aprendiendoRef.current.classList.add(css.aparece);
+     }, []);
    
     return (
         <section className={css.inicio} id="inicio">
