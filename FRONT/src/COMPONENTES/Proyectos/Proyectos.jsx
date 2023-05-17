@@ -125,17 +125,16 @@ export default function Proyectos() {
                 </div>    
 
                 <div className={`${css.cara} ${css.back}`}>
-                  <div className={css.containerResumen}>  
-                    <p className={css.resumen}>
-                      Nuestro equipo se ha dedicado a desarrollar una aplicación que simplifica la adopción y el cuidado de mascotas. Gracias a la geolocalización, la aplicación ayuda a los usuarios a encontrar mascotas que necesitan un hogar en su área de residencia. <br></br>Además, hemos expandido nuestros servicios para incluir contratación de paseadores, un ecommerce y un apartado para ayudar a personas que han perdido a sus mascotas.
-                      Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
-                    </p>
+                  <div className={css.containerResumenSPA}>  
+                <p className={css.resumen}>
+                  ¡Descubre nuestra increíble app de recetas! Con más de 5000 recetas y +20 tipos de dietas, encontrarás una amplia variedad de opciones saludables.<br></br> Además, puedes crear tus propias recetas y utilizar filtros combinados para personalizar tus búsquedas.
+                </p>
                   </div>
               <div className={css.containerGit}>
-              <a target="blank" href="">
+              <a target="blank" href="https://github.com/NachoAbait/SPA-Food">
                       <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
                     </a> 
-                    <a target="blank" href="https://www.adoptme.com.ar/">
+                    <a target="blank" href="https://prueba-seven-rho.vercel.app/">
                       <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
                     </a>     
                   </div>
@@ -162,20 +161,13 @@ export default function Proyectos() {
                 </div>    
 
                 <div className={`${css.cara} ${css.back}`}>
-                  <div className={css.containerResumen}>  
+                  <div className={css.containerResumenSPA}>  
                     <p className={css.resumen}>
-                      Nuestro equipo se ha dedicado a desarrollar una aplicación que simplifica la adopción y el cuidado de mascotas. Gracias a la geolocalización, la aplicación ayuda a los usuarios a encontrar mascotas que necesitan un hogar en su área de residencia. <br></br>Además, hemos expandido nuestros servicios para incluir contratación de paseadores, un ecommerce y un apartado para ayudar a personas que han perdido a sus mascotas.
-                      Al proporcionar estos servicios adicionales, nuestra aplicación no solo ayuda a los usuarios a encontrar una mascota, sino que también ofrece una solución completa para su cuidado.<br></br>Estos servicios adicionales también nos permiten generar ingresos adicionales y crecer nuestro negocio a largo plazo.
+                    ¡Bienvenido a nuestra increíble app de colecciones de juegos! Con una selección de más de 30.000 juegos, encontrarás una amplia variedad de opciones para explorar y descubrir.<br></br>
+                    Nuestra app te ofrece una colección curada de juegos emocionantes de diferentes géneros y estilos. Desde clásicos atemporales hasta los últimos lanzamientos, encontrarás resúmenes detallados y reseñas de cada juego para ayudarte a tomar decisiones informadas.
                     </p>
                   </div>
-              <div className={css.containerGit}>
-              <a target="blank" href="">
-                      <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
-                    </a> 
-                    <a target="blank" href="https://www.adoptme.com.ar/">
-                      <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
-                    </a>     
-                  </div>
+              
                 </div>   
           </div>
           

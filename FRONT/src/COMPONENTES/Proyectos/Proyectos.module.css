@@ -229,3 +229,17 @@
     font-size: 17px;
     margin-top: 50px;
 }
+
+.containerResumenSPA{
+    position: relative;
+    width: 90%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 17px;
+    margin-top: 50px;
+}
