@@ -72,7 +72,7 @@ export default function Proyectos() {
               <div className={css.Tarjeta}>
                 <div className={`${css.cara} ${css.front}`}>
                   <div className={css.containerFoto}>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvjA9NiUux2YAr1qbu5GJDMEq0bMy5gLxllytHpMs&s" className={css.foto}/>
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/872/600/non_2x/cute-dog-in-box-with-a-poster-adopt-me-animal-cartoon-concept-isolated-can-used-for-t-shirt-greeting-card-invitation-card-or-mascot-flat-cartoon-style-free-vector.jpg" className={css.foto}/>
                   </div>
                   <div className={css.containerNombre}>
                     <h1 className={css.nombre}>
