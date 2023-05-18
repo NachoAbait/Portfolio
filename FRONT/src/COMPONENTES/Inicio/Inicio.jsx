@@ -21,7 +21,7 @@ export default function Inicio() {
                     className={css.fotito}
           ></img>
                     </div>
-                    <div className={css.h1}>
+                    <div className={css.h1} ref={aprendiendoRef}>
                         <h1 >Full Stack Developer </h1>
                     </div>
                     <div className={css.h4} ref={aprendiendoRef}>
@@ -38,10 +38,7 @@ export default function Inicio() {
 
             </div>
            
-            <div className={css.efecto}>
-                pija
-                
-            </div>
+           
             
                     <div className={css.olas}>
                         <svg className={css.waves} preserveAspectRatio='none' shapeRendering='auto' viewBox='0 24 150 28' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'>

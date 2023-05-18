@@ -2,10 +2,8 @@
 import css from "./Proyectos.module.css"
 import React, { useEffect, useState , useRef} from "react"
 import { useDispatch, useSelector } from "react-redux"
-//COMPONENTES
-import TarjetaProyecto from "../TarjetaProyecto/TarjetaProyecto";
+
 //ACTIONS
-import getProyecto from "../../ACTIONS/getProyecto"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faNode, faHtml5, faCss3Alt, faSquareJs, faReact, faGithub , } from "@fortawesome/free-brands-svg-icons"
 import { faLink } from "@fortawesome/free-solid-svg-icons"

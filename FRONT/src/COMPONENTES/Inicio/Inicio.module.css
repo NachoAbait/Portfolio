@@ -2,25 +2,23 @@
     background-color: black;
     position: relative;
     width: 100%;
-    top: 83px;
     display: flex;
-    height: 750px;
+    height: 650px;
 }
 
 .presentacion{
 display: flex;
 position: absolute;
-width: 40%;
-margin-left: 190px;
-top: 10%;
-height: 70%;
+width: 55%;
+margin-left: 10%;
+top: 15%;
+height: 55%;
 }
 
 .img{
-    background-color: rgb(248, 248, 248);
     position: relative;
-    width: 40%;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -30,24 +28,24 @@ height: 70%;
 }
 
 .h1{
-    position: absolute;
+    position: relative;
     display: flex;
-    font-size: 50px;
+    font-size: 200%;
     width: 60%;
-    height: 300px;
-    right: 0px;
     color: yellow;
     margin: 0;
-
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 6%;
 }
 
 .h4{
 position: absolute;
-top: 300px;
-width: 120%;
-right:-60px;
+top: 65%;
+width: 100%;
+right:6%;
 text-align: left;
-font-size: x-large;
+font-size: 110%;
 color: white;
 display: flex;
 opacity: 0;
@@ -66,12 +64,11 @@ transition: all 3s;
 }
 
 .icono{
-
 position: absolute;
 width: 25%;
 height: 70%;
 right: 7%;
-top: 10%;
+top: 15%;
 }
 
 .animacion{
@@ -81,8 +78,8 @@ display: flex;
 .js{
     color: yellow;
     border: 0ch;
-    width: 300px;
-    height: 300px;
+    width: 200%;
+    height: 200px;
 }
 
 
@@ -143,21 +140,22 @@ display: flex;
 
 .btn{
   position: absolute;
-  right: 400px;
-  top: 450px;
+  right: 15%;
+  top: 60%;
 }
 
 .boton{
+  display: flex;
   background-color: #e71d3544;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 120%;
   color: black;
-  margin-left: 2%;
-  width: 200px;
-  height: 60px;
+  width: 120%;
+  height: 100%;
   border-radius: 50px;
   cursor: pointer;
   transition: 1s ;
+  padding: 10%;
 }
 
 .boton:focus {

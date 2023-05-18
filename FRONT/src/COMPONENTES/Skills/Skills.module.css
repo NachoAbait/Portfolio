@@ -1,7 +1,6 @@
 .Skills{
     position: relative;
     width: 100%;
-    top: 83px;
     display: flex-box;
 
 }
@@ -9,12 +8,12 @@
 .titulo{
     position: relative;
     width: 100%;
-    top: 90px;
+    top: 50px;
     display: relative;
     height: 120px;
     text-align: left;
-    font-size: xx-large;
-    padding-left: 40px;
+    font-size: 130%;
+    padding-left: 4%;
     margin-bottom: 0;
     opacity: 0;
 }
@@ -31,11 +30,11 @@
         width: 70%;
         margin: 0 auto;
         position: relative;
-        margin-top: 200px;
+        margin-top: 7%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 1%;
         opacity: 0;
         z-index: 999;
         
@@ -46,18 +45,16 @@
     overflow: hidden;
     position: relative;
     border: solid 5px grey;
-    height: 100px;
-    display: flex;
     background-color: beige;
+    height: 10%;
 }
-
-
 
 .icono{
     position: relative;
     width: 30%;
-    height: 100%;
-    padding-left: 10px;
+    height: 80%;
+    padding-left: 10%;
+    top: 15%;
 }
 
 .font{
@@ -67,10 +64,12 @@
 
 .tecnologia{
     position: relative;
-    font-size: x-large;
+    font-size: 100%;
     width: 70%;
     height: 100%;
-
+    align-items: center;
+    justify-content: center;
+    top:23%;
 }
 
 a {
@@ -83,7 +82,7 @@ a {
 }
 
 .express{
-    padding-top: 20px;
+    height: 80%;
 }
 
 .extras{
@@ -112,14 +111,17 @@ a {
     overflow: hidden;
     position: relative;
     border: solid 5px grey;
-    height: 100px;
+    height: 100%;
     display: flex;
     background-color: beige;;
+
 }
 
 .item:hover{
     background-color: rgba(93, 91, 91, 0.247);
-    border: solid
+    border: solid;
+    cursor: pointer;
+    
 }
 
 
@@ -137,9 +139,9 @@ a {
 
 .animation1{
 position: absolute;
-width: 50%;
-height: 900px;
-top: 100px;
+width: 40%;
+height: 40%;
+top: -2%;
 right: 0;
 display: flex;
 }
@@ -154,23 +156,22 @@ display: flex;
     position: relative;
     display: flex;
     width: 80%;
-    height: 700px;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 2%;
 }
 
 .extra1Animation{
     position: relative;
-    top: 0;
+    top: 10%;
     width: 40%;
-    height: 100%;
+    height: 70%;
     display: flex;
 }
 
 .extra1Animacion{
     border: 0ch;
   width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
 .extra1Texto{
@@ -186,24 +187,23 @@ display: flex;
     position: relative;
     display: flex;
     width: 80%;
-    height: 700px;
     margin: 0 auto;
     margin-bottom: 10px;
+    top: 0;
+
 }
 
 .extra2Animation{
     position: relative;
-    top: 0;
     width: 40%;
     height: 100%;
     display: flex;
-    top: -90px;
 }
 
 .extra2Animacion{
-    border: 0ch;
-  width: 100%;
-  height: 100%;
+  border: 0ch;
+  width: 130%;
+  height: 400px;
 }
 
 .extra2Texto{
@@ -213,32 +213,31 @@ display: flex;
     align-items: center;
     font-size: large;
     text-align: left;
-    padding-top: 80px;
     margin: 0;
     opacity: 0;
     
 }
 
 .extra2Texto h1{
-    font-size: 60px;
+    font-size: 250%;
     color: rgb(255, 106, 0);
     margin: 0;
 }
 .extra2Texto h4{
     margin-top: 0;
     color: black;
-    font-size: xx-large;
+    font-size: 130%;
 }
 
 .extra1Texto h1{
-    font-size: 60px;
+    font-size: 250%;
     color: rgb(100, 13, 205);
     margin: 0;
 }
 .extra1Texto h4{
     margin-top: 0;
     color: black;
-    font-size: xx-large;
+    font-size: 130%;
 }
 
 .apareceTexto1{
