@@ -173,7 +173,14 @@ export default function Proyectos() {
                     Nuestra app te ofrece una colección curada de juegos emocionantes de diferentes géneros y estilos. Desde clásicos atemporales hasta los últimos lanzamientos, encontrarás resúmenes detallados y reseñas de cada juego para ayudarte a tomar decisiones informadas.
                     </p>
                   </div>
-              
+                  <div className={css.containerGit}>
+              <a target="blank" href="https://github.com/NachoAbait/SPA-Videogames">
+                      <FontAwesomeIcon icon={faGithub} fade className={css.iconoEnlace} />
+                    </a> 
+                    <a target="blank" href="https://prueba2-lilac.vercel.app/">
+                      <FontAwesomeIcon icon={faLink} fade className={css.iconoEnlace} />
+                    </a>     
+                  </div>
                 </div>   
           </div>
           
