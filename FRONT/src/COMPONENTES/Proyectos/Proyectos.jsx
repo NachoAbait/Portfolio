@@ -208,7 +208,7 @@ export default function Proyectos() {
                 <div className={`${css.cara} ${css.back}`}>
                   <div className={css.containerResumenMercadopago}>  
                 <p className={css.resumen}>
-                En este proyecto, demuestro mi habilidad para integrar MercadoPago en una aplicación, brindando a los usuarios una forma segura y conveniente de realizar pagos. <br></br>Con esta integración, ofreceremos diversas opciones de pago y garantizaremos transacciones seguras.
+                Con este proyecto simplemente quiero mostrar mi conocimiento para integrar MercadoPago en una aplicación, brindando a los usuarios una forma segura y conveniente de realizar pagos. <br></br>Con esta integración, ofreceremos diversas opciones de pago y garantizaremos transacciones seguras.
                 </p>
                   </div>
               <div className={css.containerGit}>
