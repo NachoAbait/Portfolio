@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     display: flex-box;
-
 }
 
 .titulo{
@@ -113,8 +112,6 @@ a {
     border: solid 5px grey;
     height: 100%;
     display: flex;
-    background-color: beige;;
-
 }
 
 .item:hover{
