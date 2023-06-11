@@ -29,13 +29,14 @@
 .container{
     opacity: 0;
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 3%;
     display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .aparece{
