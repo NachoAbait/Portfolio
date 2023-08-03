@@ -109,7 +109,7 @@ export default function Proyectos() {
           <div className={css.Tarjeta}>
                 <div className={`${css.cara} ${css.front}`}>
                   <div className={css.containerFoto}>
-                    <img src="https://cdn-icons-png.flaticon.com/512/3789/3789946.png" className={css.foto}/>
+                    <img src="https://images.vexels.com/media/users/3/151869/isolated/preview/767ca771755f4675d4063c03e17c8595-icono-de-lista-de-verificacion-medica.png" className={css.foto}/>
                   </div>
                   <div className={css.containerNombre}>
                     <h1 className={css.nombre}>
