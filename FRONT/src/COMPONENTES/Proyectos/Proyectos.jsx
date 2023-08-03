@@ -130,7 +130,7 @@ export default function Proyectos() {
                 <div className={`${css.cara} ${css.back}`}>
                   <div className={css.containerResumen}>  
                 <p className={css.resumen}>
-                "Esta es una aplicación de tareas diseñada para la productividad. Los usuarios pueden escribir rápidamente notas o tareas, marcándolas como completadas y eliminándolas a medida que avanza su día.<br></br> Para una funcionalidad mejorada, los usuarios pueden registrarse e iniciar sesión, lo que les permite acceder a un perfil personalizado. En su perfil, pueden almacenar, editar y eliminar notas de manera permanente, lo que les permite organizar y rastrear tareas a lo largo del tiempo, asegurando que los usuarios nunca pierdan su progreso. <br></br>Esta aplicación es una herramienta esencial para mantenerse organizado en la vida cotidiana"
+                Esta es una aplicación de tareas diseñada para la productividad. Los usuarios pueden escribir rápidamente notas o tareas, marcándolas como completadas y eliminándolas a medida que avanza su día.<br></br> Para una funcionalidad mejorada, los usuarios pueden registrarse e iniciar sesión, lo que les permite acceder a un perfil personalizado. En su perfil, pueden almacenar, editar y eliminar notas de manera permanente, lo que les permite organizar y rastrear tareas a lo largo del tiempo, asegurando que los usuarios nunca pierdan su progreso. <br></br>Esta aplicación es una herramienta esencial para mantenerse organizado en la vida cotidiana
                     </p>
                   </div>
               <div className={css.containerGit}>
