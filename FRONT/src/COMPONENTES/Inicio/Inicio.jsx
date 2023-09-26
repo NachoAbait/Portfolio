@@ -54,7 +54,7 @@ export default function Inicio() {
                         </svg>
                     </div>
             <div className={css.btn}>
-                <a target="blank" href="https://drive.google.com/file/d/1GCDLet-97PKW-6hg3IEhdUR_zDGb-UoH/view?usp=sharing">
+                <a target="blank" href="https://drive.google.com/file/d/1VwCxhC7VRUmYZF3V3T8HOn3drcusET6-/view?usp=sharing">
                     <button className={css.boton}>Descargar CV</button>
                 </a>
             
